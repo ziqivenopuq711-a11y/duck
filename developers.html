@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Resources | AI Unchained</title>
+  <link rel="stylesheet" href="1de98341b7e33ab1.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav style="background:#0A0F1C;padding:12px 20px;position:sticky;top:0;z-index:9999;border-bottom:2px solid #00D4AA;font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+    <span style="color:#F5EC43;font-weight:700;font-size:1.1rem;margin-right:16px;">🦆 DuckChain</span>
+    <a href="index.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;transition:background 0.2s;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Home</a>
+    <a href="about.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">About</a>
+    <a href="overview.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Overview</a>
+    <a href="ecosystem.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Ecosystem</a>
+    <a href="developers.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Developers</a>
+    <a href="prizes.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Prizes</a>
+    <a href="tracks.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Tracks</a>
+    <a href="schedule.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Schedule</a>
+    <a href="sponsors.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Sponsors</a>
+    <a href="careers.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Careers</a>
+    <a href="contact.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Contact</a>
+    <a href="security.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Security</a>
+    <a href="tokenomics.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Tokenomics</a>
+  </div>
+</nav>
+
+<main class="dc-main">
+  <div class="dc-hero">
+    <div class="dc-container">
+      <h1 class="dc-hero-title">Developer Resources</h1>
+      <p class="dc-hero-subtitle">Everything you need to start building AI-native dApps on DuckChain — SDKs, APIs, agent frameworks, and documentation</p>
+    </div>
+  </div>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">Getting Started with DuckChain</h2>
+      <p>Setting up your DuckChain development environment takes less than ten minutes. Start by installing the DuckChain CLI using <code>npm install -g @duckchain/cli</code>. Next, initialize a new project with <code>duckchain init my-project</code> and follow the prompts to configure your development environment. Connect to the DuckChain testnet using the built-in faucet to receive free test DUCK tokens for gas fees.</p>
+      <p>The DuckChain testnet mirrors the mainnet environment with 100% API compatibility, so your code will work without modifications when you deploy to production. Full documentation, interactive tutorials, and a growing library of example projects are available at the official DuckChain developer portal, making it straightforward for both blockchain veterans and newcomers to get productive quickly. The AI Unchained hackathon team hosts live onboarding sessions at the start of the event to help teams get their environments set up and their first transactions on-chain.</p>
+      <div class="dc-highlight">
+        <p><strong>Quick start:</strong> <code>npm install -g @duckchain/cli &amp;&amp; duckchain init my-project &amp;&amp; duckchain faucet</code> — you'll be sending your first AI-triggered transaction within minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">Smart Contract Development</h2>
+      <p>DuckChain is fully compatible with Solidity and Vyper smart contracts, making it easy for Ethereum developers to migrate or extend their existing projects. DuckChain adds AI-specific precompiles that allow contracts to request inference from registered AI models, store and retrieve vector embeddings on-chain, and interact with AI oracle networks.</p>
+      <p>The DuckChain Hardhat plugin and Foundry integration make testing and deployment workflows familiar and efficient. For AI Unchained hackathon participants, DuckChain provides a set of audited base contracts including <code>AIAgent.sol</code>, <code>DeFAIPool.sol</code>, and <code>OnChainOracle.sol</code> that teams can extend with their own logic to reduce development time and security risk. These base contracts have been reviewed by leading smart contract security firms and implement industry-standard security patterns, giving hackathon teams a solid and trustworthy foundation to build upon.</p>
+      <div class="dc-grid">
+        <div class="dc-card"><span class="dc-card-icon">🔨</span><h3>Hardhat Plugin</h3><p>Full DuckChain Hardhat integration for familiar compile, test, and deploy workflows with AI precompile support.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">⚒️</span><h3>Foundry Support</h3><p>Foundry-based testing and deployment for teams who prefer fast, Rust-powered smart contract tooling.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">📄</span><h3>Audited Templates</h3><p>Pre-audited base contracts for AI agents, DeFAI pools, and on-chain oracles to jumpstart your project safely.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">AI Agent Framework</h2>
+      <p>Building autonomous AI agents that interact with DuckChain requires careful consideration of both the AI decision-making layer and the blockchain execution layer. DuckChain's Agent SDK provides a unified interface that abstracts the complexity of on-chain interactions, allowing AI models to sign transactions, query contract state, and respond to on-chain events without requiring deep blockchain expertise.</p>
+      <p>The SDK integrates natively with popular AI frameworks including LangChain, AutoGPT, and ElizaOS. For more advanced use cases, DuckChain's MPC (Multi-Party Computation) wallet infrastructure allows AI agents to control funds without any single party holding the private key, enabling truly trustless autonomous operation. This means an AI agent can manage significant on-chain assets with cryptographic guarantees that no single node, operator, or attacker can unilaterally drain the wallet or halt the agent's operation.</p>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">API Reference &amp; Documentation</h2>
+      <p>DuckChain maintains comprehensive developer documentation covering every aspect of the platform. The REST API and GraphQL API allow applications to query chain data, submit transactions, and monitor events programmatically. WebSocket subscriptions provide real-time event streams for responsive application UIs.</p>
+      <p>The AI Model Registry API allows developers to register, version, and monetize AI models that can be called by smart contracts. All APIs follow OpenAPI 3.0 specifications and include interactive playgrounds in the documentation. Regular changelog updates, migration guides, and breaking change notices ensure developers can stay current with platform evolution. DuckChain's API versioning policy guarantees at least six months of backward compatibility for all stable API versions, so hackathon projects built today will continue to function well into the future.</p>
+      <div class="dc-grid">
+        <div class="dc-card"><span class="dc-card-icon">🌐</span><h3>REST &amp; GraphQL API</h3><p>Query any on-chain data, submit transactions, and monitor agent activity through clean, well-documented APIs.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">📡</span><h3>WebSocket Streams</h3><p>Real-time event subscriptions for building responsive UIs that react instantly to on-chain state changes.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">🤖</span><h3>Model Registry API</h3><p>Register, version, and monetize AI models that smart contracts can call directly from on-chain logic.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dc-footer">
+  <div class="dc-container">
+    <div class="dc-footer-grid">
+      <div class="dc-footer-col">
+        <h3>🦆 DuckChain</h3>
+        <p>Building the AI-blockchain future from Singapore.</p>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Hackathon</h3>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
+          <li><a href="prizes.html">Prizes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="developers.html">Developers</a></li>
+          <li><a href="ecosystem.html">Ecosystem</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="tokenomics.html">Tokenomics</a></li>
+        </ul>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dc-footer-bottom">
+      <p>© 2025 DuckChain. All rights reserved. | <a href="security.html">Security</a> | <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
