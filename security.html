@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security | DuckChain AI Unchained</title>
+  <link rel="stylesheet" href="1de98341b7e33ab1.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav style="background:#0A0F1C;padding:12px 20px;position:sticky;top:0;z-index:9999;border-bottom:2px solid #00D4AA;font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+    <span style="color:#F5EC43;font-weight:700;font-size:1.1rem;margin-right:16px;">🦆 DuckChain</span>
+    <a href="index.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;transition:background 0.2s;" onmouseover="this.style.background='#1a2540'" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Home</a>
+    <a href="about.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">About</a>
+    <a href="overview.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Overview</a>
+    <a href="ecosystem.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Ecosystem</a>
+    <a href="developers.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Developers</a>
+    <a href="prizes.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Prizes</a>
+    <a href="tracks.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Tracks</a>
+    <a href="schedule.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Schedule</a>
+    <a href="sponsors.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Sponsors</a>
+    <a href="careers.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Careers</a>
+    <a href="contact.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Contact</a>
+    <a href="security.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Security</a>
+    <a href="tokenomics.html" style="color:#00D4AA;text-decoration:none;font-size:0.9rem;padding:4px 10px;border-radius:4px;" onmouseover="this.style.background='#1a2540'" onmouseout="this.style.background='transparent'">Tokenomics</a>
+  </div>
+</nav>
+
+<main class="dc-main">
+  <div class="dc-hero">
+    <div class="dc-container">
+      <h1 class="dc-hero-title">Security</h1>
+      <p class="dc-hero-subtitle">Best practices for building secure AI-blockchain applications on DuckChain — essential reading for all hackathon participants</p>
+    </div>
+  </div>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">Smart Contract Security</h2>
+      <p>Security is paramount in any blockchain application, and AI-integrated smart contracts present unique security challenges that builders must address proactively. DuckChain recommends that all hackathon submissions undergo thorough code review before deployment, even on testnet.</p>
+      <p>Key security considerations for AI-integrated contracts include: protecting AI model endpoints from manipulation, validating and sanitizing all data returned by AI oracles before using it in financial logic, implementing proper access controls on AI agent permissions, using established patterns like checks-effects-interactions to prevent reentrancy, and thoroughly testing edge cases in AI decision-making logic. DuckChain provides audited base contract templates that implement these security patterns, giving teams a secure foundation to build upon. Using these templates as a starting point significantly reduces the surface area for common vulnerabilities and allows teams to focus their security attention on the novel AI-specific logic in their applications.</p>
+      <div class="dc-grid">
+        <div class="dc-card"><span class="dc-card-icon">🔍</span><h3>Input Validation</h3><p>Always validate and sanitize AI oracle outputs before using them in financial calculations or access control decisions.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">🔒</span><h3>Access Controls</h3><p>Implement strict role-based permissions on AI agent actions, especially for high-value operations like treasury management.</p></div>
+        <div class="dc-card"><span class="dc-card-icon">🔄</span><h3>Reentrancy Guards</h3><p>Use checks-effects-interactions pattern and OpenZeppelin's ReentrancyGuard for all functions that transfer ETH or tokens.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">AI Agent Safety</h2>
+      <p>Autonomous AI agents that control on-chain assets introduce novel safety challenges. The primary risk is that an AI agent might make incorrect decisions based on manipulated inputs — a vulnerability known as prompt injection in LLM-based systems. DuckChain's Agent SDK includes built-in safeguards including input validation, rate limiting, spending limits, and emergency pause mechanisms that allow human operators to halt an agent if it begins behaving unexpectedly.</p>
+      <p>Hackathon participants are strongly encouraged to implement multi-sig controls over AI agent wallets, set maximum transaction limits, use time-locked operations for high-value decisions, and build comprehensive logging so that agent behavior can be audited and understood after the fact. The goal is to build AI agents that are powerful and autonomous while remaining safe and recoverable — systems that humans can trust to operate independently but also safely intervene with if something goes wrong. DuckChain's pre-hackathon security workshop covers AI agent safety patterns in depth with practical examples and code templates.</p>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">Network Security</h2>
+      <p>DuckChain's consensus mechanism is designed to provide strong security guarantees even in adversarial conditions. The proof-of-stake validator set is economically incentivized to behave honestly through slashing conditions that destroy validator stakes for provably malicious behavior. Block finality is deterministic and achieved within seconds, eliminating the risk of long reorganization attacks that could be exploited by AI systems reacting to unconfirmed state.</p>
+      <p>DuckChain's mempool protections prevent transaction front-running through a combination of private transaction routing and fair ordering rules. Regular third-party security audits of the core protocol, consensus implementation, and AI-specific VM extensions ensure that the foundation builders rely on is robust and trustworthy. DuckChain publishes all audit reports publicly so that developers can review the findings and understand the security posture of the platform they are building on.</p>
+    </div>
+  </section>
+
+  <section class="dc-section">
+    <div class="dc-section-inner">
+      <h2 class="dc-section-title">Best Practices for Builders</h2>
+      <p>DuckChain recommends the following security best practices for all AI Unchained hackathon participants:</p>
+      <ul>
+        <li>Write comprehensive test suites covering both happy paths and edge cases, including adversarial AI inputs.</li>
+        <li>Use formal verification tools where possible for critical contract logic.</li>
+        <li>Implement emergency pause functionality in all contracts.</li>
+        <li>Keep AI agent private keys in secure enclaves or MPC wallets, never in plaintext environment variables or configuration files.</li>
+        <li>Use established libraries (OpenZeppelin, DuckChain base contracts) rather than rolling your own cryptography or access control.</li>
+        <li>Document your threat model explicitly so judges and future auditors can understand your security assumptions.</li>
+        <li>Set conservative transaction size limits during the hackathon and testnet phase, even if your application will eventually handle larger amounts.</li>
+        <li>Participate in DuckChain's pre-hackathon security workshop to learn about common vulnerabilities and how to avoid them.</li>
+      </ul>
+      <div class="dc-highlight">
+        <p><strong>Responsible disclosure:</strong> If you discover a security vulnerability in DuckChain's protocol or infrastructure during the hackathon, please report it responsibly to <strong>security@duckchain.io</strong> before disclosing publicly. DuckChain operates a bug bounty program and will reward valid reports appropriately.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dc-footer">
+  <div class="dc-container">
+    <div class="dc-footer-grid">
+      <div class="dc-footer-col">
+        <h3>🦆 DuckChain</h3>
+        <p>Building the AI-blockchain future from Singapore.</p>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Hackathon</h3>
+        <ul>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="tracks.html">Tracks</a></li>
+          <li><a href="prizes.html">Prizes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="developers.html">Developers</a></li>
+          <li><a href="ecosystem.html">Ecosystem</a></li>
+          <li><a href="security.html">Security</a></li>
+          <li><a href="tokenomics.html">Tokenomics</a></li>
+        </ul>
+      </div>
+      <div class="dc-footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dc-footer-bottom">
+      <p>© 2025 DuckChain. All rights reserved. | <a href="security.html">Security</a> | <a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
